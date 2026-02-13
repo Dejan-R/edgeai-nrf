@@ -1,0 +1,25 @@
+
+menu "EdgeAI_nRF"
+
+config MQTT_SAMPLE_PUB_TOPIC
+    string "MQTT publish topic"
+    default "edgeai/fault"
+
+config MQTT_SAMPLE_SUB_TOPIC
+    string "MQTT subscribe topic"
+    default "edgeai/cmd"
+
+config MQTT_SAMPLE_BROKER_HOSTNAME
+    string "MQTT broker hostname"
+    default "192.168.4.1"
+
+config MQTT_SAMPLE_BROKER_USERNAME
+    string "MQTT broker username"
+    default "username"
+
+config MQTT_SAMPLE_BROKER_PASSWORD
+    string "MQTT broker password"
+    default "pass"
+
+endmenu
+source "Kconfig.zephyr"

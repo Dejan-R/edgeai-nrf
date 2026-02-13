@@ -1,0 +1,92 @@
+# ======================
+# Zephyr / Nordic build artifacts
+# ======================
+build*/
+out*/
+cmake_build*/
+CMakeFiles*/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+*.cmake
+*.cmake.* 
+.ninja*
+rules.ninja
+build.ninja
+.zephyr/
+.zephyr.settings
+west-top/
+twister-out*/
+*.dts.tmp
+*.edt.pickle
+generated/
+zephyr/include/generated/
+zephyr/misc/generated/
+modules/**/generated/
+
+# ======================
+# Binary / compiled outputs
+# ======================
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.a
+*.so
+*.dfu
+*.zip
+*.lst
+*.img
+*.out
+*.d
+*.dir
+
+# ======================
+# Edge Impulse SDK build outputs
+# ======================
+third_party/edge_impulse/**/CMakeFiles/
+third_party/edge_impulse/**/build/
+third_party/edge_impulse/**/obj/
+
+# ======================
+# IDE / Editor
+# ======================
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ======================
+# OS / temp / cache
+# ======================
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.tmp
+*.log
+*.bak
+*.orig
+*.rej
+*.patch
+
+# ======================
+# Nordic / nRF tools
+# ======================
+.nrfutil/
+.segger/
+JLinkSettings.ini
+JLink.log
+modules/**/build/
+modules/**/tmp/
+modules/hal/nordic/nrfxlib/**
+
+# ======================
+# Optional: Configuration files
+# ======================
+*.config.old
